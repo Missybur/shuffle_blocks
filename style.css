@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  transition: all 500ms linear;
+}
+
+.tile.active {
+  transform: rotateY(180deg);
+}
+
+.tile-front {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #d3d3d3;
+}
+
+.tile-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 10px;
+}

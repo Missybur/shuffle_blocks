@@ -1,2 +1,2 @@
-# shuffle_blocks
+# blocks
 matching blocks shuffle
